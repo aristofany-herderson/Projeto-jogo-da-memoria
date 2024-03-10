@@ -55,7 +55,7 @@ const checkEndGame = () =>{
   const disabledCards = document.querySelectorAll('.disabled-card');
 
   if(disabledCards.length === 12) {
-    alert('Parabéns, você ganhou!');
+    alert(`Parabéns, você ganhou! Você fez ${moves} movimentos`);
   }
 }
 
