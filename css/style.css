@@ -1,21 +1,28 @@
-@font-face {
-  font-family: minecraft;
-  src: url('../fonts/Minecrafter.Alt.ttf');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
+@font-face {
+  font-family: minecraft;
+  src: url("../fonts/Minecrafter.Alt.ttf");
+}
+
+body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-image: url('../imgs/capa3.jpg');
+  background-image: url("../imgs/360.gif");
   background-size: cover;
+  background-repeat: repeat-y;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
   padding: 20px 20px 50px;
 }
 
-main{
+main {
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -26,7 +33,7 @@ main{
   padding: 20px 20px 50px;
 }
 
-header{
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,7 +47,7 @@ header{
   font-family: minecraft;
 }
 
-footer{
+footer {
   background-color: rgba(255, 255, 255, 0.5);
   font-size: 1.2em;
   padding: 30px;
@@ -58,29 +65,29 @@ footer{
   line-height: 25px;
 }
 
-.baixo h2{
+.baixo h2 {
   text-align: center;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 18px;
-    letter-spacing: 5px;
-    box-sizing: border-box;
-    margin-top: 1em;
-    margin-bottom: 2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 5px;
+  box-sizing: border-box;
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 
-.baixo .container{
+.baixo .container {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
-.baixo .divisor{
+.baixo .divisor {
   display: none;
 }
 
-.baixo .divisor{
+.baixo .divisor {
   width: 1px;
   height: 100%;
   margin: 0 30px;
@@ -104,7 +111,7 @@ footer{
   line-height: 1.5;
 }
 
-#reloadButton{
+#reloadButton {
   background: #282a3a;
   color: rgb(194, 194, 194);
   border-radius: 5px;
@@ -116,7 +123,7 @@ footer{
   font-family: minecraft;
 }
 
-.grid{
+.grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 15px;
@@ -124,9 +131,9 @@ footer{
   max-width: 1200px;
   min-width: 600px;
   margin: 0 auto;
-} 
+}
 
-.card{
+.card {
   aspect-ratio: 3/4;
   width: 100%;
   border-radius: 5px;
@@ -135,7 +142,7 @@ footer{
   transform-style: preserve-3d;
 }
 
-.face{
+.face {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -143,23 +150,23 @@ footer{
   background-position: center;
   border: 2px solid #39813a;
   border-radius: 5px;
-  transition: all 400ms ease
+  transition: all 400ms ease;
 }
 
-.front{
+.front {
   transform: rotateY(180deg);
 }
 
-.back{
+.back {
   background-image: url(../imgs/capa.jpg);
   backface-visibility: hidden;
 }
 
-.reveal-card{
+.reveal-card {
   transform: rotateY(180deg);
 }
 
-.disabled-card{
+.disabled-card {
   filter: saturate(0);
   opacity: 0.5;
 }
